@@ -26,8 +26,8 @@
         "email": "support@pyrocms.com"
     },
     "require": {
-        "knplabs/github-api": "~2.10.1",
-        "php-http/guzzle6-adapter": "~2.1.0"
+        "knplabs/github-api": "^2.7",
+        "php-http/guzzle6-adapter": "^1.1"
     },
     "autoload": {
         "psr-4": {
