@@ -1,16 +1,10 @@
 <?php
 
 return [
-    'client_id'     => [
+    'token' => [
         'required' => true,
-        'env'      => 'GITHUB_CLIENT_ID',
+        'env'      => 'GITHUB_TOKEN',
         'type'     => 'anomaly.field_type.encrypted',
-        'bind'     => 'anomaly.extension.github::github.client_id',
-    ],
-    'client_secret' => [
-        'required' => true,
-        'env'      => 'GITHUB_CLIENT_SECRET',
-        'type'     => 'anomaly.field_type.encrypted',
-        'bind'     => 'anomaly.extension.github::github.client_secret',
+        'bind'     => 'anomaly.extension.github::github.token',
     ],
 ];

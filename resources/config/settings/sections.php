@@ -1,12 +1,11 @@
 <?php
 
 return [
-    'oauth_credentials' => [
-        'title'       => 'anomaly.extension.github::section.oauth_credentials.title',
-        'description' => 'anomaly.extension.github::section.oauth_credentials.description',
+    'personal_access_token' => [
+        'title'       => 'anomaly.extension.github::section.personal_access_token.title',
+        'description' => 'anomaly.extension.github::section.personal_access_token.description',
         'fields'      => [
-            'client_id',
-            'client_secret',
+            'token',
         ],
     ],
 ];

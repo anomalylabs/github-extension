@@ -1,6 +1,7 @@
 <?php namespace Anomaly\GithubExtension\Github;
 
 use Abraham\GithubOAuth\GithubOAuth;
+use Github\Client;
 
 /**
  * Class GithubConnection
@@ -16,18 +17,18 @@ class GithubConnection
 {
 
     /**
-     * The github connection.
+     * The GitHub connection.
      *
-     * @var GithubOAuth
+     * @var Client
      */
     protected $connection;
 
     /**
      * Create a new GithubConnection instance.
      *
-     * @param GithubOAuth $connection
+     * @param Client $connection
      */
-    public function __construct(GithubOAuth $connection)
+    public function __construct(Client $connection)
     {
         $this->connection = $connection;
     }
@@ -35,7 +36,7 @@ class GithubConnection
     /**
      * Get the connection.
      *
-     * @return GithubOAuth
+     * @return Client
      */
     public function getConnection()
     {

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'oath_credentials' => [
-        'title'       => 'oAuth Credentials',
-        'description' => 'You can find this information within your app at <a href="https://github.com/settings/developers" target="_blank">GitHub</a>.',
+    'personal_access_token' => [
+        'title'       => 'Personal Access Token',
+        'description' => 'You can generate a new token at <a href="https://github.com/settings/tokens" target="_blank">GitHub</a>.',
     ],
 ];
