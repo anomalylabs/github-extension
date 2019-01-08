@@ -41,7 +41,7 @@ class GithubExtensionServiceProvider extends AddonServiceProvider
                 GithubConnection::class,
                 function () use ($config) {
                     return new GithubConnection(
-                        new GithubOAuth(
+                        new Client(
                             $config->get('anomaly.extension.github::github.consumer_key'),
                             $config->get('anomaly.extension.github::github.consumer_secret'),
                             $config->get('anomaly.extension.github::github.access_token'),

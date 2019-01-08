@@ -26,7 +26,7 @@
         "email": "support@pyrocms.com"
     },
     "require": {
-        "knplabs/github-api": "~2.10.0"
+        "knplabs/github-api": "~2.10.1"
     },
     "autoload": {
         "psr-4": {

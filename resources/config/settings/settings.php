@@ -1,28 +1,16 @@
 <?php
 
 return [
-    'consumer_key'        => [
+    'client_id'     => [
         'required' => true,
-        'env'      => 'TWITTER_CONSUMER_KEY',
+        'env'      => 'GITHUB_CLIENT_ID',
         'type'     => 'anomaly.field_type.encrypted',
-        'bind'     => 'anomaly.extension.github::github.consumer_key',
+        'bind'     => 'anomaly.extension.github::github.client_id',
     ],
-    'consumer_secret'     => [
+    'client_secret' => [
         'required' => true,
-        'env'      => 'TWITTER_CONSUMER_SECRET',
+        'env'      => 'GITHUB_CLIENT_SECRET',
         'type'     => 'anomaly.field_type.encrypted',
-        'bind'     => 'anomaly.extension.github::github.consumer_secret',
-    ],
-    'access_token'        => [
-        'required' => true,
-        'env'      => 'TWITTER_ACCESS_TOKEN',
-        'type'     => 'anomaly.field_type.encrypted',
-        'bind'     => 'anomaly.extension.github::github.access_token',
-    ],
-    'access_token_secret' => [
-        'required' => true,
-        'env'      => 'TWITTER_ACCESS_TOKEN_SECRET',
-        'type'     => 'anomaly.field_type.encrypted',
-        'bind'     => 'anomaly.extension.github::github.access_token_secret',
+        'bind'     => 'anomaly.extension.github::github.client_secret',
     ],
 ];
